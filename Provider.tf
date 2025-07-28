@@ -7,13 +7,6 @@ terraform {
     }
 
   }
-  backend "azurerm" {
-    resource_group_name  = "devinfra_rg1"
-    storage_account_name = "singhstoragedev"
-    container_name       = "shtfstate"
-    key                  = "terraform.tfstate"
-  }
-
 }
 provider "azurerm" {
 
